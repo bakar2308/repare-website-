@@ -4,95 +4,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Repare | Business Websites</title>
+<title>Repare — Digital Experiences</title>
+<meta name="description" content="Premium websites for ambitious businesses. Build your digital presence with Repare.">
 <style>
+:root{--bg:#070b14;--panel:#101827;--blue:#578bff;--cyan:#62e4ff;--muted:#a4b1c7;--line:#26354b}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#080d19;color:#f5f7ff;line-height:1.7}
-header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #233047}
-.logo{font-size:25px;font-weight:bold;color:white}
-.logo span,h1 span,h2 span{color:#60dcff}
-nav a{color:#d2daeb;text-decoration:none;margin-left:18px;font-size:14px}
-.hero{padding:90px 7%;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center;background:radial-gradient(ellipse at 80% 30%,#16345b,transparent 60%)}
-.tag{color:#60dcff;font-size:12px;letter-spacing:2px}
-h1{font-size:clamp(38px,6vw,64px);line-height:1.15;margin:20px 0}
-p{color:#b5c1d6;margin:16px 0}
-.btn{display:inline-block;background:linear-gradient(100deg,#4285ff,#55dcf5);padding:13px 20px;border-radius:8px;color:#06101c;text-decoration:none;font-weight:bold;margin-top:12px}
-.preview{border:1px solid #345274;background:#101c30;border-radius:18px;padding:30px;box-shadow:0 15px 50px #0005}
-.preview h2{font-size:30px;line-height:1.3}
-.preview-box{margin-top:25px;height:100px;border-radius:10px;background:linear-gradient(120deg,#163e67,#0c1424);border:1px solid #345274}
-section.services{padding:65px 7%}
-.heading{text-align:center;margin-bottom:30px}
-.heading h2{font-size:34px}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.card{background:#101a2b;border:1px solid #25354b;border-radius:12px;padding:25px}
-.card h3{margin:10px 0}
-.card p{font-size:14px}
-.about{padding:55px 7%;background:#0e1726}
-.cta{padding:65px 7%;text-align:center;background:radial-gradient(ellipse,#153354,#080d19 70%)}
-footer{padding:25px 7%;border-top:1px solid #25354b;color:#9cabc2;font-size:13px;text-align:center}
-.float{position:fixed;bottom:18px;right:18px;background:#20c875;color:#062114;text-decoration:none;border-radius:50px;padding:15px;font-weight:bold;box-shadow:0 5px 25px #0008}
-@media(max-width:650px){
-header{padding:16px 5%}nav a{margin-left:10px;font-size:12px}
-.hero{grid-template-columns:1fr;padding:65px 6%}
-.preview{padding:24px}.cards{grid-template-columns:1fr}
-section.services,.about,.cta{padding:50px 6%}
-.heading h2{font-size:28px}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#f5f8ff;line-height:1.7}
+a{text-decoration:none;color:inherit}
+header{height:76px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12;background:#070b14}
+.logo{font-size:26px;font-weight:800;letter-spacing:-1px}
+.logo span{color:var(--cyan)}
+nav{display:flex;gap:25px;font-size:14px;color:#c5d0e2}
+nav a:hover{color:var(--cyan)}
+.hero{padding:100px 7% 85px;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center;background:radial-gradient(ellipse at 80% 20%,#1b3970 0%,transparent 50%)}
+.eyebrow{color:var(--cyan);font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.08;letter-spacing:-2.8px;margin:22px 0}
+.gradient{background:linear-gradient(100deg,#74a4ff,#65e7ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+p{color:var(--muted);margin:17px 0}
+.hero p{max-width:510px;font-size:17px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:9px;font-weight:bold;font-size:14px;background:linear-gradient(110deg,var(--blue),var(--cyan));color:#06101d;border:1px solid transparent}
+.btn.secondary{background:transparent;color:#f5f8ff;border-color:#43516a}
+.btn:hover{transform:translateY(-2px)}
+.visual{border:1px solid #ffffff20;border-radius:22px;background:linear-gradient(145deg,#172945,#0b1220 75%);padding:28px;box-shadow:0 25px 80px #0006}
+.visual-top{display:flex;justify-content:space-between;align-items:center;color:#9eb1cc;font-size:12px}
+.dot{width:8px;height:8px;display:inline-block;border-radius:50%;background:#61e7bb;margin-right:7px}
+.mock{margin-top:25px;padding:24px;border-radius:15px;background:#0b1321;border:1px solid #ffffff12}
+.mock small{color:var(--cyan);letter-spacing:2px}
+.mock h2{font-size:30px;line-height:1.2;margin-top:14px}
+.bars{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:23px}
+.bar{height:68px;border-radius:10px;background:linear-gradient(130deg,#254d82,#14243b);border:1px solid #ffffff10}
+section.content{padding:75px 7%}
+.center{text-align:center;max-width:650px;margin:0 auto 35px}
+h2{font-size:clamp(29px,4vw,42px);line-height:1.2;letter-spacing:-1px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}
+.card{padding:26px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,#121e30,#0c1320);transition:.2s}
+.card:hover{border-color:#578bff;transform:translateY(-3px)}
+.symbol{font-size:24px;color:var(--cyan)}
+.card h3{font-size:19px;margin-top:12px}
+.card p{font-size:14px;margin-bottom:0}
+.about{background:#0b1220;border-top:1px solid #ffffff0b;border-bottom:1px solid #ffffff0b}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.points{display:grid;gap:13px;color:#d5deed}
+.points span:first-child{color:var(--cyan);margin-right:9px}
+.contact{text-align:center;background:radial-gradient(ellipse at center,#18345a,transparent 70%)}
+.contact p{max-width:530px;margin:18px auto}
+footer{padding:26px 7%;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#8c9bb2;font-size:13px}
+.float{position:fixed;right:18px;bottom:18px;background:#24d477;color:#062414;padding:13px 18px;border-radius:50px;font-weight:bold;box-shadow:0 8px 25px #0008;z-index:5}
+@media(max-width:700px){
+header{height:auto;min-height:68px;padding:15px 5%;gap:10px;flex-wrap:wrap}
+nav{gap:14px;font-size:12px}
+.hero{grid-template-columns:1fr;padding:65px 6% 55px;gap:30px}
+h1{letter-spacing:-1.8px}
+.visual{padding:19px}
+section.content{padding:55px 6%}
+.cards{grid-template-columns:1fr}
+.about-inner{grid-template-columns:1fr;gap:20px}
+footer{padding:23px 6%}
 }
 </style>
 </head>
 <body>
 <header>
-<a href="#home" class="logo">R<span>.</span> Repare</a>
-<nav><a href="#home">Home</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+<a class="logo" href="#home">R<span>.</span> Repare</a>
+<nav><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
 </header>
-
 <main>
 <section class="hero" id="home">
 <div>
-<div class="tag">DIGITAL SOLUTIONS FOR BUSINESS</div>
-<h1>Your Business.<br><span>Our Digital Touch.</span></h1>
-<p>We create modern, mobile-friendly websites that help businesses build trust, reach customers and grow online.</p>
-<a class="btn" href="#contact">Start Your Project ↗</a>
+<div class="eyebrow">Digital solutions for modern business</div>
+<h1>Your next level<br>starts <span class="gradient">online.</span></h1>
+<p>We create clean, premium and mobile-friendly websites that help your business build trust, stand out and connect with more customers.</p>
+<div class="actions">
+<a class="btn" href="#contact">Start a project ↗</a>
+<a class="btn secondary" href="#services">Explore services</a>
 </div>
-<div class="preview">
-<div class="tag">YOUR BUSINESS ONLINE</div>
-<h2>Make a great<br><span>first impression.</span></h2>
-<p>A better website starts here.</p>
-<div class="preview-box"></div>
+</div>
+<div class="visual">
+<div class="visual-top"><span>REPARE / DIGITAL STUDIO</span><span><i class="dot"></i>Online</span></div>
+<div class="mock">
+<small>YOUR DIGITAL PRESENCE</small>
+<h2>Make your first<br><span class="gradient">impression count.</span></h2>
+<p>Thoughtful design. Clear message. Better experience.</p>
+<div class="bars"><div class="bar"></div><div class="bar"></div></div>
+</div>
 </div>
 </section>
-
-<section class="services" id="services">
-<div class="heading"><div class="tag">OUR SERVICES</div><h2>How we help your business</h2><p>Simple digital solutions for ambitious businesses.</p></div>
+<section class="content" id="services">
+<div class="center"><div class="eyebrow">What we do</div><h2>Built for your <span class="gradient">next chapter.</span></h2><p>Digital essentials to help your business look professional and grow online.</p></div>
 <div class="cards">
-<div class="card"><h3>🌐 Business Websites</h3><p>Professional websites that explain your services and help customers contact you.</p></div>
-<div class="card"><h3>✦ Landing Pages</h3><p>Focused pages for your products, offers and customer enquiries.</p></div>
-<div class="card"><h3>◇ Website Redesign</h3><p>Give your existing website a fresh, modern and mobile-friendly look.</p></div>
-<div class="card"><h3>⚙ Website Support</h3><p>Content updates, layout changes and basic maintenance.</p></div>
+<div class="card"><div class="symbol">↗</div><h3>Business Websites</h3><p>A professional online home that introduces your business and turns visitors into enquiries.</p></div>
+<div class="card"><div class="symbol">✳</div><h3>Landing Pages</h3><p>Focused, polished pages for campaigns, services and special offers.</p></div>
+<div class="card"><div class="symbol">◇</div><h3>Website Redesign</h3><p>Refresh an outdated website with a modern look and a better mobile experience.</p></div>
+<div class="card"><div class="symbol">⌘</div><h3>Website Support</h3><p>Helpful updates and simple improvements as your business evolves.</p></div>
 </div>
 </section>
-
-<section class="about">
-<div class="tag">WHY REPARE?</div>
-<h2>Professional design.<br><span>Simple process.</span></h2>
-<p>Every business deserves a strong online presence. We focus on clean design, clear messaging and a great mobile experience.</p>
-<p>✓ Mobile-friendly layouts<br>✓ Design suited to your business<br>✓ Easy customer enquiries<br>✓ Direct communication</p>
+<section class="content about" id="about">
+<div class="about-inner">
+<div><div class="eyebrow">The Repare approach</div><h2>Premium look.<br><span class="gradient">Personal service.</span></h2></div>
+<div><p>Every business deserves to be presented at its best. We focus on thoughtful design, clear communication and websites that work beautifully on mobile.</p><div class="points"><div><span>✓</span> Mobile-first design</div><div><span>✓</span> Clear service information</div><div><span>✓</span> Easy customer contact</div><div><span>✓</span> Direct, friendly communication</div></div></div>
+</div>
 </section>
-
-<section class="cta" id="contact">
-<div class="tag">LET'S WORK TOGETHER</div>
-<h2>Ready to grow <span>your business?</span></h2>
-<p>Tell us what you need. Let's discuss a website for your business.</p>
-<a class="btn" id="wa" href="https://wa.me/918879667582" target="_blank">Chat on WhatsApp ↗</a>
-<p><small>Replace the sample WhatsApp number with your own.</small></p>
+<section class="content contact" id="contact">
+<div class="eyebrow">Have a project in mind?</div>
+<h2>Let's build something <span class="gradient">great.</span></h2>
+<p>Tell us about your business and the website you need. Let's start with a conversation.</p>
+<a class="btn" href="https://wa.me/918879667582" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
 </section>
 </main>
-
-<footer>© <span id="year"></span> Repare. Digital presence made simple.</footer>
-<a class="float" id="floatwa" href="https://wa.me/918879667582" target="_blank">WhatsApp</a>
-<script>
-document.getElementById("year").textContent=new Date().getFullYear();
-</script>
+<footer><span>© <span id="year"></span> Repare Digital Studio</span><span>Designed to make your business stand out.</span></footer>
+<a class="float" href="https://wa.me/918879667582" target="_blank" rel="noopener">WhatsApp ↗</a>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
 </body>
 </html>
-
