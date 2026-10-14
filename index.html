@@ -142,5 +142,6 @@ const policyBackdrop=document.getElementById('policyBackdrop');function openPoli
 function closePolicy(){if(policyBackdrop.classList.contains('open')){policyBackdrop.classList.remove('open');document.body.style.overflow=''}}document.querySelectorAll('[data-policy]').forEach(b=>b.addEventListener('click',()=>openPolicy(b.dataset.policy)));document.querySelectorAll('[data-close-policy]').forEach(b=>b.addEventListener('click',closePolicy));policyBackdrop.addEventListener('click',e=>{if(e.target===policyBackdrop)closePolicy()});
 document.getElementById('year').textContent=new Date().getFullYear();if(BUSINESS_EMAIL){document.querySelectorAll('[data-email]').forEach(a=>{a.href='mailto:'+BUSINESS_EMAIL;a.textContent=BUSINESS_EMAIL})}
 // Keep navigation, modal interactions and enquiries usable without relying on external libraries.
+  
 </script>
 </body></html>
