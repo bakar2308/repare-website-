@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Repare | Business Websites</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#080d19;color:#f5f7ff;line-height:1.7}
+header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #233047}
+.logo{font-size:25px;font-weight:bold;color:white}
+.logo span,h1 span,h2 span{color:#60dcff}
+nav a{color:#d2daeb;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{padding:90px 7%;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center;background:radial-gradient(ellipse at 80% 30%,#16345b,transparent 60%)}
+.tag{color:#60dcff;font-size:12px;letter-spacing:2px}
+h1{font-size:clamp(38px,6vw,64px);line-height:1.15;margin:20px 0}
+p{color:#b5c1d6;margin:16px 0}
+.btn{display:inline-block;background:linear-gradient(100deg,#4285ff,#55dcf5);padding:13px 20px;border-radius:8px;color:#06101c;text-decoration:none;font-weight:bold;margin-top:12px}
+.preview{border:1px solid #345274;background:#101c30;border-radius:18px;padding:30px;box-shadow:0 15px 50px #0005}
+.preview h2{font-size:30px;line-height:1.3}
+.preview-box{margin-top:25px;height:100px;border-radius:10px;background:linear-gradient(120deg,#163e67,#0c1424);border:1px solid #345274}
+section.services{padding:65px 7%}
+.heading{text-align:center;margin-bottom:30px}
+.heading h2{font-size:34px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:#101a2b;border:1px solid #25354b;border-radius:12px;padding:25px}
+.card h3{margin:10px 0}
+.card p{font-size:14px}
+.about{padding:55px 7%;background:#0e1726}
+.cta{padding:65px 7%;text-align:center;background:radial-gradient(ellipse,#153354,#080d19 70%)}
+footer{padding:25px 7%;border-top:1px solid #25354b;color:#9cabc2;font-size:13px;text-align:center}
+.float{position:fixed;bottom:18px;right:18px;background:#20c875;color:#062114;text-decoration:none;border-radius:50px;padding:15px;font-weight:bold;box-shadow:0 5px 25px #0008}
+@media(max-width:650px){
+header{padding:16px 5%}nav a{margin-left:10px;font-size:12px}
+.hero{grid-template-columns:1fr;padding:65px 6%}
+.preview{padding:24px}.cards{grid-template-columns:1fr}
+section.services,.about,.cta{padding:50px 6%}
+.heading h2{font-size:28px}
+}
+</style>
+</head>
+<body>
+<header>
+<a href="#home" class="logo">R<span>.</span> Repare</a>
+<nav><a href="#home">Home</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div>
+<div class="tag">DIGITAL SOLUTIONS FOR BUSINESS</div>
+<h1>Your Business.<br><span>Our Digital Touch.</span></h1>
+<p>We create modern, mobile-friendly websites that help businesses build trust, reach customers and grow online.</p>
+<a class="btn" href="#contact">Start Your Project ↗</a>
+</div>
+<div class="preview">
+<div class="tag">YOUR BUSINESS ONLINE</div>
+<h2>Make a great<br><span>first impression.</span></h2>
+<p>A better website starts here.</p>
+<div class="preview-box"></div>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="heading"><div class="tag">OUR SERVICES</div><h2>How we help your business</h2><p>Simple digital solutions for ambitious businesses.</p></div>
+<div class="cards">
+<div class="card"><h3>🌐 Business Websites</h3><p>Professional websites that explain your services and help customers contact you.</p></div>
+<div class="card"><h3>✦ Landing Pages</h3><p>Focused pages for your products, offers and customer enquiries.</p></div>
+<div class="card"><h3>◇ Website Redesign</h3><p>Give your existing website a fresh, modern and mobile-friendly look.</p></div>
+<div class="card"><h3>⚙ Website Support</h3><p>Content updates, layout changes and basic maintenance.</p></div>
+</div>
+</section>
+
+<section class="about">
+<div class="tag">WHY REPARE?</div>
+<h2>Professional design.<br><span>Simple process.</span></h2>
+<p>Every business deserves a strong online presence. We focus on clean design, clear messaging and a great mobile experience.</p>
+<p>✓ Mobile-friendly layouts<br>✓ Design suited to your business<br>✓ Easy customer enquiries<br>✓ Direct communication</p>
+</section>
+
+<section class="cta" id="contact">
+<div class="tag">LET'S WORK TOGETHER</div>
+<h2>Ready to grow <span>your business?</span></h2>
+<p>Tell us what you need. Let's discuss a website for your business.</p>
+<a class="btn" id="wa" href="https://wa.me/919876543210" target="_blank">Chat on WhatsApp ↗</a>
+<p><small>Replace the sample WhatsApp number with your own.</small></p>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Repare. Digital presence made simple.</footer>
+<a class="float" id="floatwa" href="https://wa.me/919876543210" target="_blank">WhatsApp</a>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
